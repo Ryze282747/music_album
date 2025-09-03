@@ -12,15 +12,23 @@ body {
   background: #2a2a3b;
   box-shadow: 10px 10px 20px #181820, -10px -10px 20px #3a3a4f;
   border-radius: 30px;
-  padding: 30px;
-  width: 300px;
+  width: 50%;
+  height: 40%;
   text-align: center;
 }
-
+.cover{
+  width: 50%;
+  height: 100%;
+}
 .cover img {
-  width: 100%;
+  width: 60%;
+  height: 100%;
   border-radius: 20px;
   box-shadow: inset 6px 6px 12px #1e1e2a, inset -6px -6px 12px #3a3a4f;
+}
+#nowPlayingScreen{
+  margin: 0;
+  padding: 0;
 }
 
 h2, h3 {
@@ -132,6 +140,7 @@ h2, h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 50%;
 }
 
 #playlistScreen ul {
