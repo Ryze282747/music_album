@@ -1,5 +1,5 @@
 body {
-  background: #1e1e2f;
+  background: pink;
   font-family: 'Segoe UI', sans-serif;
   display: flex;
   justify-content: center;
@@ -9,49 +9,86 @@ body {
 }
 
 .player-container {
-  background: #2a2a3b;
-  box-shadow: 10px 10px 20px #181820, -10px -10px 20px #3a3a4f;
+  background: hsl(0, 0%, 51%);
+  box-shadow: 10px 10px 20px hsl(0, 0%, 40%), -10px -10px 20px hsl(0, 0%, 45%);
   border-radius: 30px;
   width: 50%;
-  height: 40%;
+  height: 50%;
   text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .cover{
-  width: 50%;
+  width: 38%;
   height: 100%;
 }
-.cover img {
+.cover2{
   width: 60%;
+  margin-top: 2vh;
+  margin-bottom: 5vh;
+}
+.cover img {
+  width: 100%;
   height: 100%;
   border-radius: 20px;
   box-shadow: inset 6px 6px 12px #1e1e2a, inset -6px -6px 12px #3a3a4f;
+  align-self: start;
+  margin-top: 3.5vh;
 }
 #nowPlayingScreen{
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-h2, h3 {
-  margin: 15px 0 5px;
+#title, #artist {
+  margin: 0 auto;
   color: #ffffff;
   text-align: center;
+}
+#title {
+  font-size: 24px;
+  margin-top: 1vh;
+}
+#artist {
+  font-size: 18px;
+  margin-top: 0.5vh;
+  color: #bbbbbb;
+}
+
+.container2{
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 2vh auto;
 }
 
 .controls {
   display: flex;
   justify-content: space-around;
-  margin: 20px 0;
-}
+  margin: 3.1vh auto;
+  height: 25%;
+} 
 
 .neumorphic {
-  background: #2a2a3b;
+  background: hsl(0, 0%, 43%);
   border: none;
   padding: 15px;
   border-radius: 20%;
-  box-shadow: 6px 6px 12px #181820, -6px -6px 12px #3a3a4f;
+  box-shadow: 6px 6px 12px hsl(0, 0%, 45%), -6px -6px 12px hsl(0, 0%, 50%);
   cursor: pointer;
   font-size: 18px;
   color: #ffffff;
+}
+
+.neumorphic:hover{
+  scale: 1.1;
+  transition: 0.3s ease-in-out;
 }
 
 .neumorphic span {
@@ -65,8 +102,8 @@ h2, h3 {
 .progress-container {
   display: flex;
   align-items: center;
-  gap: 8px;
-  margin: 20px 0 30px 0;
+  gap: 8px; 
+  margin: 3vh auto;
 }
 
 #progress {
@@ -140,7 +177,10 @@ h2, h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 50%;
+  width: 90%;
+  height: 20%;
+  margin: 0 auto;
+
 }
 
 #playlistScreen ul {
@@ -174,10 +214,6 @@ h2, h3 {
   border-radius: 6px;
   padding: 6px 10px;
   cursor: pointer;
-}
-
-.header {
-    margin-bottom: 20px;
 }
 
 .nowPlaying{

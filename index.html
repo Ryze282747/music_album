@@ -13,28 +13,31 @@
         <div class="cover">
           <img id="cover" src="cover1.jpg" alt="Album Cover" />
         </div>
-        <div class="header">
-          <button id="backToPlaylist" class="neumorphic">←</button>
-          <h2 class="nowPlaying">Now Playing</h2>
-           <button id="volumeCycleBtn" class="neumorphic">🔊</button>
+        <div class="cover2">
+          <div class="header">
+            <button id="" class="neumorphic">←</button>
+            <h2 class="nowPlaying">Now Playing</h2>
+            <button id="volumeCycleBtn" class="neumorphic">🔊</button>
+          </div>
+          <div class="container2">
+            <h2 id="title"></h2>
+            <h3 id="artist"></h3>
+          </div>
+    
+          <div class="progress-container">
+            <span id="current-time">0:00</span>
+            <input type="range" id="progress" value="0" />
+            <span id="duration">0:00</span>
+          </div>
+    
+          <audio id="audio" src="music1.mp3"></audio>
+    
+          <div class="controls">
+            <button id="prev" class="neumorphic"><span>&#9664;&#9664;</span></button>
+            <button id="play" class="neumorphic play"><span class="play-icon">&#9654;</span></button>
+            <button id="next" class="neumorphic"><span>&#9654;&#9654;</span></button>
+          </div>
         </div>
-        <h2 id="title"></h2>
-        <h3 id="artist"></h3>
-  
-        <div class="progress-container">
-          <span id="current-time">0:00</span>
-          <input type="range" id="progress" value="0" />
-          <span id="duration">0:00</span>
-        </div>
-  
-        <audio id="audio" src="music1.mp3"></audio>
-  
-        <div class="controls">
-          <button id="prev" class="neumorphic"><span>&#9664;&#9664;</span></button>
-          <button id="play" class="neumorphic play"><span class="play-icon">&#9654;</span></button>
-          <button id="next" class="neumorphic"><span>&#9654;&#9654;</span></button>
-        </div>
-  
       </div>
   
       <!-- ✅ Playlist Screen -->
